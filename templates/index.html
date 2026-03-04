@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>מאגר אמרות חכמים</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>מאגר אמרות חכמים</h1>
+      <p class="sub">הקלד שם חכם ובחר תוצאה כדי לראות את כל האמרות שזוהו בטקסט.</p>
+
+      <label for="query">חיפוש חכם</label>
+      <input id="query" type="text" placeholder="לדוגמה: רבי יוחנן" autocomplete="off" />
+      <div id="sage-results" class="sage-results"></div>
+
+      <h2 id="selected-sage-title">לא נבחר חכם</h2>
+      <div id="statements" class="statements"></div>
+    </main>
+    <div id="sage-tooltip" class="sage-tooltip"></div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
